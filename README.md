@@ -2,6 +2,8 @@
 ## The Iteration on the Iteration of the Iteration on the Iteration of "Pretty Okay, I Guess" Shell!
 **author:** fayth quinn ([*@losingfayth*](https://github.com/losingfayth))
 
+*30th April 2024*
+
 This program implements a rudimentary shell for GNU/Linux systems, taking cues from Bash, among others.
 
 The purpose of this program is to explore the ways which an operating system and its programs are constructed and handled. This program is written in C as that is the favorite language of many an OS programmer (and for good reason!)
