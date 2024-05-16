@@ -14,7 +14,12 @@ Features
  * View command history, scroll through command history, and autocomplete commands from command history
 
 ## Context
-The program was created as part of a school project. The first part of this project (POIGS, no history or batch file support) was completed in about two days. The second part of this project (#POIGS#) was completed in around two days, based off of the first part (only the second part available in this repository).
+The program was created as part of a school project. The first part of this project, POIGS, had no history or batch file support. The second part of this project, #POIGS# was built off of the first part (only the second part available in this repository).
+
+## Project Time
+POIGS: ~2 Days  
+#POIGS#: ~2 Days  
+Total: ~4 Days
 
 ## Known Issues
  * Some pipe commands, such as 'yes abc | head -10' hang, forcing external termination
@@ -44,24 +49,24 @@ On POIGS
 	* fq:	:)
 
 On #POIGS#
-* dc: Basic functionality
-	  Does not work: echo "a b c" | wc (but it is an issue with quotes, not pipes, because echo abc | wc works)
-	  Minor detail: > and >> were implemented for append and overwrite respectively due to a typo on one line.
+* dc: Basic functionality  
+	  &nbsp;&nbsp;Does not work: echo "a b c" | wc (but it is an issue with quotes, not pipes, because echo abc | wc works)  
+	  &nbsp;&nbsp;Minor detail: > and >> were implemented for append and overwrite respectively due to a typo on one line.
 	* fq: Quote handling improved from submitted version but still shakey. Redirection fixed.
-* dc: Batch mode
-	  I tested it with this file:
-	  	echo testing batch mode
-		date
-		hostname
-		ls /bin/log* -l | sort -r
-		echo testing complete
-	  Everything worked except for the penultimate command. The reason why it did not work previously is that my batch file had been created in windows, which terminates lines with /r/n (vs. just /n in Linux). Not your fault. As for the penultimate command, it gives this error:
-	  	ls: cannot access '/bin/log*': No such fule or directory
-	  When I try to run just ls /bin/log* in interactive mode, it gives the same error message. At this point, looking at the code and seeing that batch mode mostly works, let's move on and just say it works. The same command produced the same error in batch mode for another student with a high-quality solution, although when I ran the command in his shell in interactive mode, there was no problem. Mysteries.
+* dc: Batch mode  
+	  &nbsp;&nbsp;I tested it with this file:  
+	  	&nbsp;&nbsp;&nbsp;&nbsp;echo testing batch mode  
+		&nbsp;&nbsp;&nbsp;&nbsp;date  
+		&nbsp;&nbsp;&nbsp;&nbsp;hostname  
+		&nbsp;&nbsp;&nbsp;&nbsp;ls /bin/log* -l | sort -r  
+		&nbsp;&nbsp;&nbsp;&nbsp;echo testing complete  
+	  &nbsp;&nbsp;Everything worked except for the penultimate command. The reason why it did not work previously is that my batch file had been created in windows, which terminates lines with /r/n (vs. just /n in Linux). Not your fault. As for the penultimate command, it gives this error:  
+	  	&nbsp;&nbsp;&nbsp;&nbsp;ls: cannot access '/bin/log*': No such fule or directory  
+	  &nbsp;&nbsp;When I try to run just ls /bin/log* in interactive mode, it gives the same error message. At this point, looking at the code and seeing that batch mode mostly works, let's move on and just say it works. The same command produced the same error in batch mode for another student with a high-quality solution, although when I ran the command in his shell in interactive mode, there was no problem. Mysteries.
 	* fq: The shell does not currently function with the wildcare character, '*'
-* dc: Command history
-	  You noted that the fact that history never appears in the history is by design. That's fine (although Bash does record history as part of the history).
+* dc: Command history  
+	  &nbsp;&nbsp;You noted that the fact that history never appears in the history is by design. That's fine (although Bash does record history as part of the history).
 	* fq: Creative license
-* dc: Auto-Completion
-	  Good.
+* dc: Auto-Completion  
+	  &nbsp;&nbsp;Good.  
 	  fq: :)
