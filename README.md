@@ -14,7 +14,7 @@ Features
  * View command history, scroll through command history, and autocomplete commands from command history
 
 ## Context
-The program was created as part of a school project. The first part of this project, POIGS, had no history or batch file support. The second part of this project, #POIGS# was built off of the first part (only the second part available in this repository).
+The program was created as part of a school project for a class on Operating Systems. The first part of this project, POIGS, had no history or batch file support. The second part of this project, #POIGS# was built off of the first part (only the second part available in this repository).
 
 ## Project Time
 POIGS: ~2 Days  
